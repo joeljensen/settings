@@ -1,5 +1,5 @@
 
-# Settigns files for intellij, rubymine, webstorm ide to very closely emulate sublime text. 
+# Keybindings and plugin Settings for intellij, rubymine, webstorm ide to very closely emulate sublime text. 
 
 to use import the settings.jar in your ide. 
 
