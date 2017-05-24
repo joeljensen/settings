@@ -92,6 +92,15 @@
 			make
 			vim
 			nano
+			tmux
+			cygutils-extra
+
+		open cygwin shell, and make symlinks
+			cd /bin
+			ln -s pip2.7 pip
+			ln -s getclip pbcopy
+			ln -s putclip pbpaste
+			ln -s easy_install-2.7 easy_install
 
 		install aws tools
 			pip install --index-url=http://pypi.python.org/simple/ --trusted-host pypi.python.org awscli
