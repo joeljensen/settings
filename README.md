@@ -30,8 +30,9 @@
 
 		Import the settings.jar in your ide.   File => Import Settings
 
-		I am using the following plugins, The important one are Lines Sorter and  Extra Actions
+		I am using the following plugins, The important one are Lines Sorter,  Extra Actions and Database Navigator
 
+		- Database Navigator
 		- EJS
 		- Javascript Intensions
 		- Ember.js
