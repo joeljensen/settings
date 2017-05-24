@@ -57,6 +57,8 @@
 				3. In right-side pane, create a new DWORD NoWinKeys and set its value to 1
 				4. Close Registry Editor and restart your system. After reboot the WIN+ hotkeys will be turned off in your system.
 				
+				5. export this registry setting, if you are in a corporate env, you will most likely need to reapply every so often.
+				
 				remap windows key to meta key in intellij
 					File : Edit Custom Properties
 					Add:
@@ -94,6 +96,8 @@
 			nano
 			tmux
 			cygutils-extra
+
+			todo ---install zsh,  tab completions, git completions, oh-my-zsh
 
 		open cygwin shell, and make symlinks
 			cd /bin
