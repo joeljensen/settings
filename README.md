@@ -96,6 +96,9 @@
 		install aws tools
 			pip install --index-url=http://pypi.python.org/simple/ --trusted-host pypi.python.org awscli
 
+				install aws tools
+			pip install --index-url=http://pypi.python.org/simple/ --trusted-host pypi.python.org s3cmd
+
 		install ansible tools
 			pip install --index-url=http://pypi.python.org/simple/ --trusted-host pypi.python.org ansible
 
