@@ -69,8 +69,12 @@
 						keymap.windows.as.meta=true
 
                 in intellij terminal settings set the run file as
-                "C:\cygwin64\bin\env.exe" INTELLIJ=true /bin/bash -l
+                "C:\cygwin64\bin\bash.exe" --login -i
                 
+                in C:\cygwin\etc\bash.bashrc
+                    on bottom of file
+                    cd "cd ${OLDPWD}"
+               
                 in your .bashrc set:
                     if [[ ${INTELLIJ} == "true" ]]; then
                       cd ${OLDPWD}
