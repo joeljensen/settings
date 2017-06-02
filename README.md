@@ -72,8 +72,11 @@
                 "C:\cygwin64\bin\bash.exe" --login -i
                 
                 in C:\cygwin\etc\bash.bashrc
-                    on bottom of file
-                    cd "cd ${OLDPWD}"
+         :q:x
+         
+         
+        xddddxx q           on bottom of file
+             dd       cd "cd ${OLDPWD}"
                
                 in your .bashrc set:
                     if [[ ${INTELLIJ} == "true" ]]; then
@@ -81,9 +84,12 @@
                     fi
 
 
+:
 
 		download settings for webstorm from
-			https://github.com/joeljensen/settings
+j
+			
+:q!
 
 			install settings in intellij 
 				File : import settings
@@ -102,7 +108,10 @@
 		in cygwin install:
 			openssh
 			git
+			bind-utils
+			gnupg
 			python 2
+			dos2unix
 			python pip for python 2
 			ruby
 			curl
@@ -122,7 +131,23 @@
 			ln -s getclip pbcopy
 			ln -s putclip pbpaste
 			ln -s easy_install-2.7 easy_install
+			
 
+        git config --global core.eol lf
+        git config --global core.autocrlf input
+        
+        edit your .basrhc file:
+        
+        alias subl="/cygdrive/c/Program\ Files/Sublime\ Text\ 3/sublime_text.exe"
+        alias open='cygstart'
+        if [[ ${INTELLIJ} == "true" ]]; then
+          cd ${OLDPWD}
+        fi      
+        wstorm() {
+            /cygdrive/c/Program\ Files/JetBrains/WebStorm\ 2017.1.3/bin/webstorm.exe $1
+        }
+        stty lnext ^q stop undef start undef
+         
 		install aws tools
 			pip install --index-url=http://pypi.python.org/simple/ --trusted-host pypi.python.org awscli
 
