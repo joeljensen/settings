@@ -159,10 +159,9 @@
 		set up cygwin as terminal in intellij
 			https://engineroom.teamwork.com/using-cygwins-bash-terminal-in-a-jetbrains-ide/
 
-		install a cygwin package manager -- (doesn't work for me, would be nice though)
+		install a cygwin package manager
 		    curl -k -L rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg
             install apt-cyg /bin
 
 		set up paste in cygwin ( not yet working for me)
 			http://www.saltycrane.com/blog/2008/05/how-to-paste-in-cygwin-bash-using-ctrl/
-			
