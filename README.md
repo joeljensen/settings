@@ -35,6 +35,8 @@
 
 		in cygwin install:
 			openssh
+            curl
+            wget
 			git
 			zip
 			unzip
@@ -44,8 +46,6 @@
 			dos2unix
 			python2-pip
 			ruby
-			curl
-			wget
 			jq
 			lynx
 			make
