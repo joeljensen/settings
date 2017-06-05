@@ -26,77 +26,6 @@
 				C:/Program Files/JetBrains/WebStorm 2017.1.3/bin  => *.exe
 
 
-	Intelij keybindings and plugin Settings e very closely emulating OSX sublime text. 
-
-		Import the settings.jar in your ide.   File => Import Settings
-
-		I am using the following plugins, The important one are Lines Sorter,  Extra Actions and Database Navigator
-
-		- Database Navigator
-		- EJS
-		- Javascript Intensions
-		- Ember.js
-		- Extra Actions
-		- Handlebars/mustache
-		- JavaScript.next Support Plugin
-		- Karma
-		- Lines Sorter
-		- Markdown support
-		- React-Templates
-		- Shell Process
-		- YAML/Ansible support
-
-
-	Set up intellij keybindings
-		disable windows hotkeys	(use method 1 regedit)
-		    
-		    If your Windows + P key pulls up a switch to projector popup, disable in the bios.
-		    -- otherwise It is otherwise mapped to alt + P 
-		    
-			http://www.askvg.com/tip-how-to-disable-all-win-keyboard-shortcuts-hotkeys-in-windows/
-				1. Type regedit in RUN or Start search box and press Enter. It'll open Registry Editor.
-				2. Now go to following key:
-				HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
-
-				3. In right-side pane, create a new DWORD NoWinKeys and set its value to 1
-				4. Close Registry Editor and restart your system. After reboot the WIN+ hotkeys will be turned off in your system.
-				
-				5. export this registry setting, if you are in a corporate env, you will most likely need to reapply every so often.
-				
-				remap windows key to meta key in intellij
-					File : Edit Custom Properties
-					Add:
-						keymap.windows.as.meta=true
-
-                in intellij terminal settings set the run file as
-                "C:\cygwin64\bin\bash.exe" --login -i
-                
-                in C:\cygwin\etc\bash.bashrc
-
-         
-         
-        on bottom of file
-             cd "cd ${OLDPWD}"
-               
-                in your .bashrc set:
-                    if [[ ${INTELLIJ} == "true" ]]; then
-                      cd ${OLDPWD}
-                    fi
-
-
-
-
-		download settings for webstorm from
-			https://github.com/joeljensen/settings
-			
-			install settings in intellij if you want mac sublime keybindings.
-			    you probabally don't want this...
-				File : import settings
-
-		install plugins:
-			lines-sorter
-			database navigator
-			sql generator
 
 	cygwin configure:
 		add alias for sublime to cygwin.
@@ -107,6 +36,8 @@
 		in cygwin install:
 			openssh
 			git
+			zip
+			unzip
 			bind-utils
 			gnupg
 			python2
@@ -179,3 +110,79 @@
 
 		set up paste in cygwin ( not yet working for me)
 			http://www.saltycrane.com/blog/2008/05/how-to-paste-in-cygwin-bash-using-ctrl/
+
+
+
+	Intelij keybindings and plugin Settings very closely emulating OSX sublime text. 
+	    If you don't want Mac keybindings, dont install the settings file.
+        
+		Import the settings.jar in your ide.   File => Import Settings
+
+		I am using the following plugins, The important one are Lines Sorter,  Extra Actions and Database Navigator
+
+		- Database Navigator
+		- EJS
+		- Javascript Intensions
+		- Ember.js
+		- Extra Actions
+		- Handlebars/mustache
+		- JavaScript.next Support Plugin
+		- Karma
+		- Lines Sorter    
+		- Markdown support
+		- React-Templates
+		- Shell Process
+		- YAML/Ansible support
+
+
+	Set up intellij keybindings
+		disable windows hotkeys	(use method 1 regedit)
+		    
+		    If your Windows + P key pulls up a switch to projector popup, disable in the bios.
+		    -- otherwise It is otherwise mapped to alt + P 
+		    
+			http://www.askvg.com/tip-how-to-disable-all-win-keyboard-shortcuts-hotkeys-in-windows/
+				1. Type regedit in RUN or Start search box and press Enter. It'll open Registry Editor.
+				2. Now go to following key:
+				HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+
+				3. In right-side pane, create a new DWORD NoWinKeys and set its value to 1
+				4. Close Registry Editor and restart your system. After reboot the WIN+ hotkeys will be turned off in your system.
+				
+				5. export this registry setting, if you are in a corporate env, you will most likely need to reapply every so often.
+				
+				remap windows key to meta key in intellij
+					File : Edit Custom Properties
+					Add:
+						keymap.windows.as.meta=true
+
+                in intellij terminal settings set the run file as
+                "C:\cygwin64\bin\bash.exe" --login -i
+                
+                in C:\cygwin\etc\bash.bashrc
+
+         
+         
+        on bottom of file
+             cd "cd ${OLDPWD}"
+               
+                in your .bashrc set:
+                    if [[ ${INTELLIJ} == "true" ]]; then
+                      cd ${OLDPWD}
+                    fi
+
+
+
+
+		download settings for webstorm from
+			https://github.com/joeljensen/settings
+			
+			install settings in intellij if you want mac sublime keybindings.
+			    you probabally don't want this...
+				File : import settings
+
+		install plugins:
+			lines-sorter
+			database navigator
+			sql generator
+
