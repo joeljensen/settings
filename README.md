@@ -72,11 +72,11 @@
                 "C:\cygwin64\bin\bash.exe" --login -i
                 
                 in C:\cygwin\etc\bash.bashrc
-         :q:x
+
          
          
-        xddddxx q           on bottom of file
-             dd       cd "cd ${OLDPWD}"
+        on bottom of file
+             cd "cd ${OLDPWD}"
                
                 in your .bashrc set:
                     if [[ ${INTELLIJ} == "true" ]]; then
@@ -84,14 +84,13 @@
                     fi
 
 
-:
+
 
 		download settings for webstorm from
-j
+			https://github.com/joeljensen/settings
 			
-:q!
-
-			install settings in intellij 
+			install settings in intellij if you want mac sublime keybindings.
+			    you probabally don't want this...
 				File : import settings
 
 		install plugins:
