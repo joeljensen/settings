@@ -109,12 +109,13 @@
 			git
 			bind-utils
 			gnupg
-			python 2
+			python2
 			dos2unix
-			python pip for python 2
+			python2-pip
 			ruby
 			curl
 			wget
+			jq
 			lynx
 			make
 			vim
@@ -146,16 +147,29 @@
             /cygdrive/c/Program\ Files/JetBrains/WebStorm\ 2017.1.3/bin/webstorm.exe $1
         }
         stty lnext ^q stop undef start undef
-         
+        
+        configure pip to work in corporate network:
+        
+            cd ~
+            mkdir .pip
+            cd .pip
+            vi pip.conf
+            add:
+                [global]
+                index-url=http://pypi.python.org/simple/
+                trusted-host=pypi.python.org
+
 		install aws tools
 			pip install --index-url=http://pypi.python.org/simple/ --trusted-host pypi.python.org awscli
 
-		install s3cmd tools
-			pip install --index-url=http://pypi.python.org/simple/ --trusted-host pypi.python.org s3cmd
-
+        install eb tools
+            pip install --upgrade --user --index-url=http://pypi.python.org/simple/ --trusted-host pypi.python.org urllib3
+            pip install --upgrade --user --index-url=http://pypi.python.org/simple/ --trusted-host pypi.python.org awsebcli
+            add to end of your .bashrc
+                export PATH=~/.local/bin:$PATH
 		install ansible tools
 			pip install --index-url=http://pypi.python.org/simple/ --trusted-host pypi.python.org ansible
-
+			
 		set up cygwin as terminal in intellij
 			https://engineroom.teamwork.com/using-cygwins-bash-terminal-in-a-jetbrains-ide/
 
