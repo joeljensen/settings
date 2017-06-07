@@ -34,26 +34,15 @@
 
 
 		in cygwin install:
-			openssh
-            curl
-            wget
-			git
-			zip
-			unzip
-			bind-utils
-			gnupg
-			python2
-			dos2unix
-			python2-pip
-			ruby
-			jq
-			lynx
-			make
-			vim
-			nano
-			tmux
-			cygutils-extra
-
+		    when installing with the cygwin installer, install the packages:  curl wget
+		    
+		    once its installed run cygwin and install the package manager.
+		    install the cygwin package manager apt-cyg:
+                curl -k -L rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg
+                install apt-cyg /bin
+		    
+		    # now install all the tools you will need:
+		    apt-cyg install bind-utils cygutils-extra dos2unix git gnupg ImageMagick jq lynx make nano openssh python2 python2-pip ruby tmux unzip vim zip 
 			todo ---install zsh,  tab completions, git completions, oh-my-zsh
 
 		open cygwin shell, and make symlinks
@@ -103,10 +92,6 @@
 			
 		set up cygwin as terminal in intellij
 			https://engineroom.teamwork.com/using-cygwins-bash-terminal-in-a-jetbrains-ide/
-
-		install a cygwin package manager
-		    curl -k -L rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg
-            install apt-cyg /bin
 
 		set up paste in cygwin ( not yet working for me)
 			http://www.saltycrane.com/blog/2008/05/how-to-paste-in-cygwin-bash-using-ctrl/
