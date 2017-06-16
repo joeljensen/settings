@@ -160,7 +160,7 @@
                 in intellij terminal settings set the run file as
                 "C:\cygwin64\bin\zsh.exe" --login -i
                 
-                edit C:/cygwin/.zshrc
+                edit  C:/cygwin/.zshrc 
                     on bottom of file
                          "cd ${OLDPWD}"
                            
